@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <!-- header -->
+    <header>
+        <nav class="header_bar">
+            <a class="header_logo" href="index.html">
+                <h1>[portfolio]</h1>
+            </a>
+
+            <div class="header_nav_bar">
+                <a class="header_nav_bar_item" href="#interactive_elements">[Interactive Elements]</a>
+
+                <a class="header_nav_bar_item" href="#text_styling">[Text Styling]</a>
+
+                <a class="header_nav_bar_item" href="#arts_direction">[Art Direction]</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Interactive Elements -->
+        <section id="interactive_elements">
+            <h2>Interactive Elements</h2>
+
+            <!-- in-text link -->
+            <div class="element">
+                <h3>In-text link</h3>
+            </div>
+
+            <div class="element_detail">
+
+                <div class="code">
+                    <h4>Code:</h4>
+
+                    <code>&lt;p&gt;This is an &lt;a class="in_text_link" href="#" target="_blank"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;</code>
+
+                </div>
+
+                <h4>Rendered element:</h4>
+                <p>This is an <a class="in_text_link" href="#" target="_blank"> in-text link</a>.</p>
+
+                <h4>CSS Selector:</h4>
+                <p>.in_text_link</p>
+            </div>
+
+
+            <!-- navigation link -->
+            <div class="element">
+                <h3>Navigation link</h3>
+            </div>
+
+            <div class="element_detail">
+
+                <div class="code">
+                    <h4>Code:</h4>
+                    <code>&lt;div class="header_nav_bar"&gt;</code><br>
+                    <code>&lt;a class="header_nav_bar_item" href="#about_me"&gt;About Me&lt;/a&gt;</code><br>
+                    <code>&lt;/div&gt;</code>
+                </div>
+
+                <h4>Rendered element:</h4>
+                <div class="header_nav_bar">
+                    <a class="header_nav_bar_item" href="#about_me">About Me</a>
+                </div>
+
+                <h4>CSS selector:</h4>
+                <p>.header_nav_bar_item</p>
+            </div>
+
+
+            <!-- forms submit button -->
+            <div class="element">
+                <h3>A submit button for forms</h3>
+            </div>
+
+            <div class="element_detail">
+
+                <div class="code">
+                    <h4>Code:</h4>
+                    <code>&lt;a href="#" class="primary_button"&gt;Submit&lt;/a&gt;</code>
+                </div>
+
+                <h4>Rendered element:</h4>
+                <a href="#" class="primary_button other_font">Submit</a>
+
+                <h4>CSS selector</h4>
+                <p>.primary_button</p>
+            </div>
+
+
+            <!-- forms reset button -->
+            <div class="element">
+                <h3>A reset button for forms</h3>
+            </div>
+
+            <div class="element_detail">
+
+                <div class="code">
+                    <h4>Code:</h4>
+                    <code>&lt;a href="#" class="secondary_button"&gt;Reset&lt;/a&gt;</code>
+                </div>
+
+                <h4>Rendered element:</h4>
+                <a href="#" class="secondary_button other_font">Reset</a>
+
+                <h4>CSS selector</h4>
+                <p>.secondary_button</p>
+            </div>
+
+
+            <!-- image as a link -->
+            <div class="element">
+                <h3>An image as a link</h3>
+            </div>
+
+            <div class="element_detail">
+
+                <div class="code">
+                    <h4>Code:</h4>
+                    <code>&lt;div class="card_text"&gt;</code><br>
+                    <code>&lt;a class="project_card" href="ddw.html" target="_blank"&gt;</code><br>
+                    <code>&lt;div class="project_card_img"&gt;</code><br>
+                    <code>&lt;img src="img/238_ddw.svg" alt="IAT238 Microsite Homepage"&gt;</code><br>
+                    <code>&lt;/div&gt;</code><br>
+
+                    <code>&lt;div class="project_card_text"&gt;</code><br>
+                    <code>&lt;h4&gt;Dutch Design Week Microsite&lt;br&gt;$15/PP&lt;/h4&gt;</code><br>
+                    <code>&lt;p&gt;Interaction Design 2026&lt;/p&gt;</code><br>
+                    <code>&lt;/div&gt;</code><br>
+
+                    <code>&lt;/a&gt;</code><br>
+                    <code>&lt;/div&gt;</code>
+                </div>
+
+                <h4>Rendered element:</h4>
+
+                <div class="project_list_grid">
+                    <!--project detail page -->
+                    <div class="card_text">
+                        <a class="project_card" href="ddw.html" target="_blank">
+                            <div class="project_card_img">
+                                <img src="img/238_ddw.svg" alt="IAT238 Microsite Homepage">
+                            </div>
+
+                            <div class="project_card_text">
+                                <h4>Dutch Design Week Microsite</h4>
+                                <p>Interaction Design 2026</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <h4>CSS Selector:</h4>
+                <p>.project_card</p>
+            </div>
+
+        </section>
+
+
+        <section id="text_styling">
+            <h2>Text Styling</h2>
+
+
+            <!-- text element -->
+            <div class="text_element_grid">
+                <div class="font_type">
+                    <div class="element">
+                        <h3>Fonts</h3>
+                    </div>
+                    <div class="element_detail">
+
+                        <div class="code">
+                            <h4>Code:</h4>
+                            <code>&lt;h1&gt;DM Mono Regular&lt;/h1&gt;</code><br>
+                            <code>&lt;h2&gt;Coolvetica Regular&lt;/h2&gt;</code><br>
+                            <code>&lt;h3&gt;Century Gothic Bold&lt;/h3&gt;</code><br>
+                            <code>&lt;h4&gt;Century Gothic Regular&lt;/h4&gt;</code><br>
+                            <code>&lt;p&gt;Futura Lt BT Light&lt;/p&gt;</code>
+                        </div>
+
+                        <h1>DM Mono Regular</h1>
+                        <h2>Coolvetica Regular</h2>
+                        <h3>Century Gothic Bold</h3>
+                        <h4>Century Gothic Regular</h4>
+                        <p>Futura Lt BT Light</p>
+                    </div>
+                </div>
+
+                <div class="heading_type">
+                    <div class="element">
+                        <h3>Headings & Paragraph</h3>
+                    </div>
+
+                    <div class="element_detail">
+
+                        <div class="code">
+                            <h4>Code:</h4>
+                            <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code><br>
+
+                            <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code><br>
+
+                            <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code><br>
+
+                            <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code><br>
+
+                            <code>&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo omnis iusto autem tempore, et repellat quis totam, inventore soluta voluptatem perspiciatis modi. Sed eligendi, quis repellat pariatur maiores nesciunt vero.&lt;/p&gt;</code>
+                        </div>
+
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo omnis iusto autem tempore, et repellat quis totam, inventore soluta voluptatem perspiciatis modi. Sed eligendi, quis repellat pariatur maiores nesciunt vero.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Numbered List -->
+            <div class="element">
+                <h3>Numbered List</h3>
+            </div>
+
+            <div class="element_detail">
+
+                <div class="code">
+                    <h4>Code:</h4>
+                    <code>&lt;div class="numbered_list"&gt;</code><br>
+
+                    <code>&lt;ol&gt;</code><br>
+                    <code>&lt;li&gt;number 1&lt;/li&gt;</code><br>
+                    <code>&lt;li&gt;number 2&lt;/li&gt;</code><br>
+                    <code>&lt;li&gt;number 3&lt;/li&gt;</code><br>
+                    <code>&lt;/ol&gt;</code><br>
+
+                    <code>&lt;/div&gt;</code>
+                </div>
+
+                <h4>Rendered element:</h4>
+
+                <div class="numbered_list other_font">
+                    <ol>
+                        <li>number 1</li>
+                        <li>number 2</li>
+                        <li>number 3</li>
+                    </ol>
+                </div>
+
+                <h4>CSS Selector:</h4>
+                <p>.numbered_list</p>
+            </div>
+
+        </section>
+
+        <section id="arts_direction">
+            <h2>Art Direction</h2>
+
+
+            <!-- color palette -->
+            <div class="element">
+                <h3>Color Palette</h3>
+            </div>
+
+
+            <div class="element_detail">
+
+                <div class="color_grid">
+                    <div class="color_1">
+                        <h3>Background Colour<br>Warm Ivory</h3>
+                        <p>#FFFBED</p>
+                        <p>RGB (255, 251, 237)</p>
+                        <p>A soft off-white used as the primary background color to create a clean, calm, and approachable visual foundation.</p>
+                    </div>
+
+                    <div class="color_2">
+                        <h3>Accent Colour<br>Vibrant Lime</h3>
+                        <p>#E0F479</p>
+                        <p>RGB (224, 244, 121)</p>
+                        <p>A bright accent color used to draw attention to key elements and create visual contrast within the interface.</p>
+                    </div>
+
+                    <div class="color_3">
+                        <h3>Accent Colour<br>Light Periwinkle</h3>
+                        <p>#A7B8DF</p>
+                        <p>RGB (167, 184, 223)</p>
+                        <p>A subtle secondary color used to support hierarchy and introduce a softer visual tone throughout the design.</p>
+                    </div>
+
+                    <div class="color_4">
+                        <h3>Primary Colour<br>Deep Blue</h3>
+                        <p>#345ABB</p>
+                        <p>RGB (52, 90, 187)</p>
+                        <p>The primary brand color used for headings, navigation, and important content to establish clarity and visual consistency.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- icons -->
+            <div class="element">
+                <h3>Potential Icons</h3>
+            </div>
+
+            <div class="element_detail">
+                <div class="icon_grid">
+                    <!-- first row of potential icons -->
+                    <div class="icon_row_1">
+                        <a href="#" target="_blank">
+                            <img src="img/phone_icon_blue.svg" alt="phone icon">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img class = "email_icon" src="img/email_icon_blue.svg" alt="email icon">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="img/linkedin_icon_blue.svg" alt="linkedin icon">
+                        </a>
+
+                    </div>
+
+                    <!-- second row of potential icons -->
+                    <div class="icon_row_2">
+                        <a href="#" target="_blank">
+                            <img src="img/phone_icon_lightblue.svg" alt="phone icon">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img class = "email_icon" src="img/email_icon_lightblue.svg" alt="email icon">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="img/linkedin_icon_lightblue.svg" alt="linkedin icon">
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_grid">
+            <div class="footer_column_1">
+                <a class="header_logo" href="index.html">
+                    <h1>[portfolio]</h1>
+                </a>
+
+                <h4><a class="in_text_link" href="contact.html">Contact</a></h4>
+                <h4><a class="in_text_link" href="style_guide.html">Style Guide</a></h4>
+                <h4><a class="in_text_link" href="citation.html">Citation</a></h4>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
