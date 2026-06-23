@@ -1,0 +1,47 @@
+.contact_hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.contact_img img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.contact_right {
+    max-width: 32rem;
+}
+
+.contact_right p {
+    margin-bottom: 3rem;
+}
+
+/* This code is created with asistance from ChatGPT.
+Promt: How can I create a hover state that changes an icon to a different color？ */
+
+.contact_info_img {
+    position: relative;
+    display: inline-block;
+}
+
+.icon_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.contact_info_img:hover .icon_default,
+.contact_info_img:focus-visible .icon_default {
+    opacity: 0;
+}
+
+.contact_info_img:hover .icon_hover,
+.contact_info_img:focus-visible .icon_hover {
+    opacity: 1;
+}
+/* -------------------------------------------------- */

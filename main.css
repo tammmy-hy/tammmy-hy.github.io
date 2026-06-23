@@ -1,0 +1,711 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #fffbed;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+This code is created with asistance from ChatGPT.
+Promt: How to add video in html and css?
+*/
+video {
+    width: 100%;
+    display: block;
+}
+/*
+--------------------------------------------------
+*/
+
+/*
+This code is created with asistance from ChatGPT.
+Promt: How can I create a stronger visual distinction for highlighted text when using a light-weight custom font in CSS? 
+*/
+.highlight_text {
+    color: #345ABB;
+    font-family: "Century_Gothic_bold";
+}
+/*
+--------------------------------------------------
+*/
+
+/*
+------------------------------------------------- Fonts -------------------------------------------------
+*/
+
+h1 {
+    font-size: 2rem;
+    font-family: "Space_Mono_regular";
+    color: #345ABB;
+
+    margin-top: 0;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.header_logo h1:hover {
+    font-weight: bold;
+    color: #A7B8DF;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.header_logo:focus-visible {
+    outline: 0.15rem solid #E0F479;
+    border-radius: 0.2rem;
+    outline-offset: 0.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "Coolvetica_regular";
+    color: #345ABB;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: "Century_Gothic_bold";
+    color: #345ABB;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: "Century_Gothic_regular";
+    color: #345ABB;
+}
+
+p {
+    font-family: "Futura_Lt_BT_light";
+    font-size: 1.25rem;
+}
+
+.other_font {
+    font-family: "Futura_Lt_BT_light";
+}
+
+.numbered_list{
+    font-size:1.25rem;
+}
+
+.text_element_grid {
+    display: flex;
+    gap: 2rem;
+}
+
+/* This code is created with asistance from ChatGPT.
+Promt: How can I create evenly sized columns within a flexbox layout? */
+.text_element_grid>div {
+    flex: 1;
+}
+/*
+--------------------------------------------------
+*/
+
+
+/*
+--------------------------------------------- Section & Elements ---------------------------------------------------
+*/
+
+section {
+    margin: 3rem 0;
+    padding: 0.3rem 0;
+
+}
+
+.element {
+    border-top: 0.08rem solid #A7B8DF;
+    border-bottom: 0.08rem solid #A7B8DF;
+}
+
+.element_detail {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.code {
+    background: #ffffff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.title_bg{
+    background-color: #A7B8DF; 
+    margin-left: -3rem;
+    margin-right: -3rem;
+    margin-bottom:2rem;
+    padding: 2rem 3rem;
+}
+
+.element_detail p {
+    overflow-wrap: anywhere;
+}
+
+
+/*
+--------------------------------------------------- Color Palette ----------------------------------------------------
+*/
+
+.color_grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.color_grid>div {
+    flex: 1;
+}
+
+.color_1 {
+    padding: 1rem;
+    background: #fffbed;
+    border: 0.1rem solid #345ABB;
+}
+
+.color_2 {
+    padding: 1rem;
+    background: #E0F479;
+}
+
+.color_2 h3 {
+    color: #345ABB;
+}
+
+.color_3 {
+    padding: 1rem;
+    background: #A7B8DF
+}
+
+.color_3 h3 {
+    color: #fffbed;
+}
+
+.color_4 {
+    padding: 1rem;
+    background: #345ABB
+}
+
+.color_4 h3 {
+    color: #fffbed;
+}
+
+/*
+--------------------------------------------------- Potential Icons ---------------------------------------------------
+*/
+
+.icon_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.icon_grid a {
+    text-decoration: none;
+}
+
+.icon_grid img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.icon_grid img.email_icon {
+    width: 3.25rem;
+    height: 2.5rem;
+}
+
+.icon_row_1,
+.icon_row_2 {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+    padding: 0.75rem 0.75rem;
+}
+
+.images_row_1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.images_row_1 img {
+    width: 100%;
+}
+
+/*
+-------------------------------------------------- Header & Navigation -------------------------------------------------------------
+*/
+
+.header_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    text-decoration: none;
+    margin-top: 2.2rem;
+}
+
+.header_nav_bar_item {
+    font-family: "Space_Mono_regular";
+    font-size: 1.4rem;
+    color: #345ABB;
+    text-decoration: none;
+
+    padding: 0.2rem 0.9rem;
+}
+
+.header_nav_bar_item:last-child {
+    border-right: none;
+}
+
+.header_nav_bar_item:hover,
+.header_nav_bar_item:focus-visible {
+    font-weight: bold;
+    color: #A7B8DF;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.header_nav_bar_item:focus-visible {
+    outline: 0.15rem solid #E0F479;
+    border-radius: 0.2rem;
+}
+
+/*
+--------------------------------------------------- In-Text Link ---------------------------------------------------------------
+*/
+
+.key_changes .in_text_link {
+    color: #A7B8DF;
+    font-weight: bold;
+}
+
+.in_text_link:hover {
+    color: #345ABB;
+}
+
+.in_text_link:focus-visible {
+    outline: 0.15rem solid #E0F479;
+    border-radius: 0.2rem;
+}
+
+/*
+-------------------------------------------------------- Button -------------------------------------------------------------------
+*/
+
+.primary_button {
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.25rem;
+    color: #fffbed;
+    text-decoration: none;
+
+    padding: 0.75rem;
+    border: 0.1rem solid;
+    border-radius: 0.5rem;
+    border-color: #345ABB;
+    background-color: #345ABB;
+
+    max-width: 15rem;
+}
+
+.primary_button:hover {
+    color: #fffbed;
+    text-decoration: none;
+
+    border-color: #A7B8DF;
+    background-color: #A7B8DF;
+    transition: 0.3s;
+}
+
+.primary_button:focus-visible {
+    border-color: #A7B8DF;
+    background-color: #A7B8DF;
+    outline: 0.2rem solid #A7B8DF;
+    outline-offset: 0.2rem;
+}
+
+.secondary_button {
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.25rem;
+    color: #345ABB;
+    text-decoration: none;
+
+    padding: 0.75rem;
+    border: 0.1rem solid;
+    border-radius: 0.5rem;
+    border-color: #345ABB;
+
+    max-width: 15rem;
+}
+
+.secondary_button:hover {
+    color: #A7B8DF;
+    text-decoration: none;
+
+    border-color: #A7B8DF;
+    background-color: #fffbed;
+    transition: 0.3s;
+}
+
+.secondary_button:focus-visible {
+    border-color: #E0F479;
+    background-color: #fffbed;
+    outline: 0.2rem solid #E0F479;
+    outline-offset: 0.2rem;
+}
+
+.button_group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+/*
+----------------------------------------------------------- An Image As A Link ------------------------------------------------------------
+*/
+
+.project_list_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.project_card {
+    display: block;
+    text-decoration: none;
+}
+
+.project_card:hover {
+    font-weight: bold;
+    color: #A7B8DF;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.project_card:focus-visible {
+    outline: 0.15rem solid #E0F479;
+    border-radius: 0.2rem;
+    padding: 1rem;
+}
+
+
+.card_text:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+
+.project_card_img img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.project_card_text {
+    margin-top: 0.5rem;
+}
+
+.project_card_text h4 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.project_card_text p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: #A7B8DF;
+}
+
+/*
+----------------------------------------------------------------- Footer ----------------------------------------------------------------
+*/
+
+footer {
+    margin-left: -3rem;
+    margin-right: -3rem;
+
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #345ABB;
+}
+
+footer h1 {
+    color: #fffbed;
+    font-size: 3rem;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer .in_text_link{
+    color:#FFFbed;
+}
+
+footer .in_text_link:hover {
+    color: #A7B8DF;
+}
+
+footer h1:focus-visible {
+    outline: 0.15rem solid #E0F479;
+    border-radius: 0.2rem;
+}
+
+footer .in_text_link:focus-visible {
+    outline: 0.2rem solid #E0F479;
+    outline-offset: 0.4rem;
+    border-radius: 0.1rem;
+}
+
+/*
+--------------------------------------------------- Hero Section --------------------------------------------------------
+*/
+
+.home_img img{
+    width:100%;
+    display: block;
+}
+
+.home_section {
+    position: relative;
+    width: calc(100% + 6rem);
+    margin-left: -3rem;
+}
+
+
+.home_text {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+.home_text h2{
+    color: #fffbed;
+} 
+
+/*
+--------------------------------------------------- (ddw / van aqua) Project detail page --------------------------------------------------------
+*/
+
+/* ---------- Project Hero ---------- */
+
+.project_detail_hero {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.project_detail_hero_img img {
+    width: 100%;
+    display: block;
+}
+
+.project_detail_intro p {
+    color: #A7B8DF;
+}
+
+
+/* ---------- Project Info Bar ---------- */
+
+.project_info_bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin: 0;
+    padding: 3rem 2rem;
+}
+
+.project_info_bar h3 {
+    margin-bottom: 1rem;
+}
+
+.project_info_bar p {
+    margin-top: 0;
+}
+
+
+/* ---------- Overview + Process ---------- */
+
+.project_overview,
+.project_process,
+.research_section,
+.research_findings,
+.persona_section,
+.project_feedback,
+.key_changes,
+.key_interactions,
+.final_design,
+.challenge_solution,
+.project_reflection {
+    max-width: 65rem;
+    margin: 5rem auto;
+}
+
+.project_overview h2,
+.project_process h2 {
+    margin-bottom: 1.5rem;
+}
+
+.process_nav {
+    padding-left: 1.5rem;
+}
+
+.process_nav li {
+    color: #345ABB;
+    margin-bottom: 0.25rem;
+}
+
+.process_nav a {
+    color: #A7B8DF;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.15rem;
+}
+
+.process_nav a:hover {
+    color: #345ABB;
+}
+
+.process_nav a:focus-visible {
+    outline: 0.15rem solid #E0F479;
+    border-radius: 0.2rem;
+}
+
+
+/* ---------- Initial Concepts ---------- */
+
+.initial_concepts {
+    margin: 0;
+    padding: 4rem 0;
+}
+
+.initial_concepts h2 {
+    margin-bottom: 3rem;
+}
+
+.initial_concepts_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.initial_concepts_grid img,
+.before_after_grid img, 
+.interaction_item img,
+.challenge_solution_img img,
+.concept_grid img,
+.final_design_grid img {
+    width: 100%;
+    display: block;
+}
+
+.challenge_solution_img img{
+    max-height: 33rem;
+}
+
+.project_feedback h2,
+.key_changes h2,
+.key_interactions h2 {
+    color: #345ABB;
+    margin-bottom: 1.5rem;
+}
+
+.project_feedback ul {
+    padding-left: 1.25rem;
+}
+
+.key_changes a {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 0.15rem;
+}
+
+.change_item {
+    border-top: 0.1rem solid #A7B8DF;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+}
+
+.before_after_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    margin-top: 2rem;
+    align-items: start;
+}
+
+.interaction_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.interaction_item h3 {
+    color: #345ABB;
+    margin-bottom: 0.25rem;
+}
+
+.interaction_item p {
+    margin-top: 0;
+}
+
+
+/* ---------- challenge & solution ---------- */
+
+
+.challenge_solution h2 {
+    color: #345ABB;
+    margin-bottom: 3rem;
+}
+
+.challenge_solution_grid,
+.persona_grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.challenge_solution_text p {
+    line-height: 1.45;
+    margin-bottom: 1.5rem;
+}
+
+/* ---------- reflection ---------- */
+
+.project_reflection h2 {
+    color: #345ABB;
+    margin-bottom: 1.5rem;
+}
+
+.project_reflection p {
+    line-height: 1.45;
+}
+

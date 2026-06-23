@@ -1,0 +1,66 @@
+/* Research */
+.research_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: center;
+}
+
+.research_grid h3,
+.insight_grid h3 {
+    color: #345ABB;
+    font-weight: 400;
+}
+
+/* Key Findings */
+.insight_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 5rem;
+}
+
+/* Persona */
+.persona_grid img {
+    width: 100%;
+    display: block;
+}
+
+/* Concept Exploration */
+.concept_exploration {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+/*
+This code is created with asistance from ChatGPT.
+Promt:How to align the three images in the Concept Exploration section using CSS?
+*/
+.concept_grid h3 {
+    min-height: 7rem;
+}
+/*
+--------------------------------------------------
+*/
+
+.concept_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.concept_exploration > p {
+    margin-top: 3rem;
+}
+
+/* Final Design */
+.final_design_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 5rem;
+}
+
+.final_design_grid p {
+    margin-bottom: 1rem;
+}
+

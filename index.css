@@ -1,0 +1,68 @@
+/* ---------------------------------- Hero Section -------------------------------- */
+
+.home_text h2{
+    color: #345abb;
+} 
+
+.home_text h3 {
+    color: #a7b8df;
+}
+
+
+/* ---------- About Me ---------- */
+
+.about_me {
+    margin: 5rem auto;
+    margin-bottom: 5rem;
+}
+
+.about_me h2 {
+    margin-bottom: 2rem;
+}
+
+.about_me_text {
+    margin-bottom: 2rem;
+}
+
+/* ---------- Works Section ---------- */
+
+.works_section_bg {
+    background-color: #A7B8DF;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    padding: 5rem 3rem 0;
+    overflow: hidden;
+}
+
+.works_section_bg h2 {
+    margin-top: 0;
+    margin-bottom: 6rem;
+}
+
+.works_content_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: start;
+}
+
+.works_text {
+    max-width: 35rem;
+}
+
+.works_text p {
+    line-height: 1.35;
+}
+
+.works_text .primary_button {
+    margin-top: 3rem;
+}
+
+.works_img img {
+    width: 100%;
+    min-width: 45rem;
+    display: block;
+}
+
+
+

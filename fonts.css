@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Space_Mono_regular";
+    src: url("../fonts/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Coolvetica_regular";
+    src: url("../fonts/Coolvetica\ Rg.otf");
+}
+
+@font-face {
+    font-family: "Century_Gothic_bold";
+    src: url("../fonts/centurygothic_bold.ttf");
+}
+
+@font-face {
+    font-family: "Century_Gothic_regular";
+    src: url("../fonts/centurygothic.ttf");
+}
+
+@font-face {
+    font-family: "Futura_Lt_BT_light";
+    src: url("../fonts/Futura\ Lt\ BT\ Light.ttf");
+}

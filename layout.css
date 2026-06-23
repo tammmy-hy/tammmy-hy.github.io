@@ -1,0 +1,236 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------- (screen width less than 992px) -------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    /* --------------------- Layout Grids (General Structure) --------------------- */
+
+    .contact_info,
+    .text_element_grid,
+    .color_grid,
+    .text_input_field_grid,
+    .product_list_grid,
+    .product_card,
+    .product_card_text,
+    .product_detail_grid,
+    .product_detail_image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text_element_grid {
+        gap: 0;
+    }
+
+    .color_grid,
+    .text_input_field_grid {
+        gap: 1.25rem;
+    }
+
+    /* ------------------------------------- Project cards ------------------------------------ */
+
+    .project_list_grid,
+    .contact_hero {
+        grid-template-columns: 1fr;
+    }
+
+    /* ------------------------------------ Header & Navigation -------------------------------------- */
+
+    .header_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .header_nav_bar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* ------------------------------------------- index ------------------------------------------ */
+
+    .about_me {
+        padding: 3rem 1rem;
+    }
+
+    .works_section_bg {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding: 3rem 1rem 0;
+    }
+
+    .works_section_bg h2 {
+        margin-bottom: 3rem;
+    }
+
+    .works_section_bg .works_content_grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .works_img img {
+        min-width: 0;
+        width: 100%;
+    }
+
+    /* ------------------------------------------ (ddw / van aqua) Project detail page ----------------------------------------- */
+
+    .initial_concepts_grid,
+    .research_grid,
+    .persona_grid,
+    .concept_grid,
+    .final_design_grid,
+    .insight_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project_info_bar {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .project_feedback,
+    .key_changes,
+    .key_interactions {
+        margin: 3rem 1rem;
+    }
+
+    .project_detail_hero,
+    .before_after_grid,
+    .interaction_grid,
+    .challenge_solution_grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .concept_grid {
+        grid-template-columns: 1fr;
+        padding: 3rem 1rem;
+    }
+
+    .project_overview,
+    .project_process,
+    .research_section,
+    .research_findings,
+    .project_feedback,
+    .persona_section,
+    .final_design,
+    .challenge_solution,
+    .project_reflection {
+        margin: 4rem 1rem;
+    }
+
+    .challenge_solution h2 {
+        margin-bottom: 2rem;
+    }
+
+
+
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------- (screen width less than 600px) -------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+
+    body {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .text_element_grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* ------------------------------ hero image for the Home and Contact Us ----------------------------- */    
+
+    .home_section {
+        position: relative;
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+    }
+
+    /* ---------------------------------- Footer -------------------------------- */
+
+    footer {
+        margin-top: 4rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    /* ---------------------------------- Header -------------------------------- */
+
+    .header_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 2rem;
+    }
+
+    .header_nav_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_nav_bar_item {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        font-size: 1.4rem;
+        text-decoration: none;
+
+        padding: 0.2rem 0.9rem;
+        border-right: none;
+    }
+
+    .header_nav_bar_item:last-child {
+        border-bottom: none;
+    }
+
+
+    /* ----------------------------------- Font Size ---------------------------------- */
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    /* ddw / van aqua */
+    .project_info_bar,
+    .insight_grid {
+        grid-template-columns: 1fr;
+    }
+
+
+}
